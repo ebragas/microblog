@@ -5,7 +5,8 @@ services:
     image: flask-mega-tutorial
     environment:
       - FLASK_APP=microblog.py
-
     build: .
     ports:
-      - 5000:5000
+      - "5000:5000"
+    volumes: 
+      - .:/app
