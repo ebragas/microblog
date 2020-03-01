@@ -3,6 +3,9 @@ version: '2.1'
 services:
   flask-mega-tutorial:
     image: flask-mega-tutorial
+    environment:
+      - FLASK_APP=microblog.py
+
     build: .
     ports:
       - 5000:5000

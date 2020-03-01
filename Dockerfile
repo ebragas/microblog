@@ -14,8 +14,6 @@ EXPOSE 5000
 WORKDIR /app
 ADD . /app
 
-ENV FLASK_APP=microblog.py
-
 # Using pip:
 RUN python3 -m pip install -r requirements.txt
 # CMD ["python3", "-m", "flask-mega-tutorial"]
