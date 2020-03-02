@@ -5,6 +5,7 @@ services:
     image: flask-mega-tutorial
     environment:
       - FLASK_APP=microblog.py
+      - SECRET_KEY=you-will-never-guess-env
     build: .
     ports:
       - "5000:5000"
